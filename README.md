@@ -57,13 +57,13 @@ Production code samples from DreamVelo demonstrating:
 
 ## The 5-Step AI-Assisted Development Framework
 
-1. **Research & Threat Modeling** - STRIDE analysis before any code
-2. **Specify Security Requirements** - Exact requirements, test cases, edge cases
+1. **Security-Informed Architecture** - Design with security mental model (zero-trust, defense in depth)
+2. **Specify Security Requirements** - Exact requirements, test cases, edge cases for AI implementation
 3. **Prompt Engineering** - Detailed prompts with line numbers, examples, validation criteria
-4. **Validate with Adversarial Testing** - 20+ malicious test cases, security code review
-5. **Deploy & Monitor** - Production deployment with comprehensive logging
+4. **Validate & Formalize Security** - STRIDE threat modeling, adversarial testing, security code review (found gaps, fixed all)
+5. **Deploy, Monitor & Maintain** - Production deployment, logging/monitoring, ongoing security operations
 
-**Key Insight:** AI accelerates implementation (~70% success rate first try, 4x speed advantage). Humans ensure correctness through architecture, security design, and validation.
+**Key Insight:** Security isn't a phase—it's continuous. Architect with security in mind, direct AI with security requirements, validate formally to find gaps, fix everything, maintain ongoing security operations. This is how you ship fast without shipping vulnerabilities.
 
 ## Security Implementation Highlights
 
@@ -118,17 +118,17 @@ Production code samples from DreamVelo demonstrating:
 
 ### What Works ✅
 
-- **Security-first design:** Threat modeling before coding prevents incidents
+- **Security-informed architecture:** Design with security mental model from day one (zero-trust, defense in depth)
 - **Detailed specifications:** AI needs exact requirements ("Block 15 patterns, log events, return false" not "Add security")
-- **Iterative validation:** Test immediately, fix fast (~2.5 iterations average per feature)
-- **Zero-trust architecture:** No secrets in frontend, authentication at every layer
+- **Formal validation finds gaps:** STRIDE analysis revealed vulnerabilities initial architecture missed. Fixed all before launch.
+- **Ongoing security operations:** Logging/monitoring, regular threat assessment, vulnerability scanning, incident response playbook
 
 ### When Human Must Step In ⚠️
 
+- **Validation found vulnerabilities:** Security-informed architecture wasn't enough. Formal STRIDE analysis revealed gaps I'd missed—fixed all before launch.
 - **iOS App Store rejections:** 4 rejections. AI couldn't debug Apple's feedback. I researched docs, fixed IAP issues.
 - **Registration bugs:** Email verification modal issues (Nov 5-12). Required manual debugging, Firestore rules analysis.
 - **Architecture decisions:** AI can't choose between approaches. I decided: zero-trust, serverless, multi-platform strategy.
-- **Security code review:** AI generates code, but I review for vulnerabilities. Found 5 issues in initial implementation.
 
 ## Contact
 

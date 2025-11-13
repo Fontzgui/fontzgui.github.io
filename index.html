@@ -277,13 +277,13 @@
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
                         <div>
-                            <div class="font-bold text-xl mb-2">Research & Threat Modeling</div>
+                            <div class="font-bold text-xl mb-2">Security-Informed Architecture</div>
                             <div class="text-gray-700">
-                                Understand problem domain, identify security threats (STRIDE analysis), define attack surface.
-                                <strong>Before writing any code.</strong>
+                                Design with security mental model: zero-trust, defense in depth, no exposed secrets, auth at every layer.
+                                <strong>Security awareness guides every decision.</strong>
                             </div>
                             <div class="text-sm text-gray-600 mt-2">
-                                → Result: 28 threats identified for DreamVelo (prompt injection, API exposure, XSS, payment fraud, auth bypass)
+                                → Foundation: DreamVelo architected with security-informed design (Cloudflare proxy, Firebase JWT, Secrets Manager)
                             </div>
                         </div>
                     </div>
@@ -328,13 +328,13 @@
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
                         <div>
-                            <div class="font-bold text-xl mb-2">Validate with Adversarial Testing</div>
+                            <div class="font-bold text-xl mb-2">Validate & Formalize Security</div>
                             <div class="text-gray-700">
-                                Test with malicious inputs, edge cases, production scenarios. Review generated code for security issues.
-                                <strong>Human validation is critical.</strong>
+                                Formal STRIDE threat modeling, adversarial testing with malicious inputs, security code review.
+                                <strong>Validation finds gaps you missed.</strong>
                             </div>
                             <div class="text-sm text-gray-600 mt-2">
-                                → Created 20+ malicious test cases, performed security code review (5 findings documented)
+                                → Result: 28 threats documented, found vulnerabilities initial architecture missed, fixed all issues before launch
                             </div>
                         </div>
                     </div>
@@ -345,13 +345,13 @@
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
                         <div>
-                            <div class="font-bold text-xl mb-2">Deploy & Monitor</div>
+                            <div class="font-bold text-xl mb-2">Deploy, Monitor & Maintain</div>
                             <div class="text-gray-700">
-                                AWS deployment, CloudWatch monitoring, rollback procedures. Track security events.
-                                <strong>Production is the real test.</strong>
+                                Production deployment with comprehensive logging/monitoring. Ongoing: regular threat assessment, vulnerability scanning, incident response playbook.
+                                <strong>Security is continuous, not one-time.</strong>
                             </div>
                             <div class="text-sm text-gray-600 mt-2">
-                                → Result: Zero security incidents, &lt;2 min rollback capability, comprehensive logging
+                                → Result: Zero incidents, &lt;2 min rollback, security logging/monitoring, ongoing security operations
                             </div>
                         </div>
                     </div>
@@ -362,8 +362,7 @@
                 <div class="bg-purple-50 border-2 border-purple-500 rounded-lg p-6 max-w-3xl mx-auto">
                     <div class="font-bold text-purple-900 text-lg mb-2">The Key Insight</div>
                     <div class="text-purple-800">
-                        <strong>AI accelerates implementation.</strong> Humans ensure correctness through architecture, security design, and validation.
-                        This is the future of technical work.
+                        Security isn't a phase—it's continuous. <strong>Architect with security in mind, direct AI with security requirements, validate formally to find gaps, fix everything, maintain ongoing security operations.</strong> This is how you ship fast without shipping vulnerabilities.
                     </div>
                 </div>
             </div>
@@ -386,7 +385,7 @@
                     <ul class="space-y-3 text-green-800">
                         <li class="flex items-start gap-2">
                             <span class="font-bold flex-shrink-0">→</span>
-                            <span><strong>Security-first design:</strong> Threat modeling before coding prevents incidents (28 threats mitigated, zero attacks)</span>
+                            <span><strong>Security-informed architecture:</strong> Design with security mental model from day one (zero-trust, defense in depth)</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="font-bold flex-shrink-0">→</span>
@@ -394,11 +393,11 @@
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="font-bold flex-shrink-0">→</span>
-                            <span><strong>Iterative validation:</strong> Test immediately, fix fast. ~2.5 iterations average per feature.</span>
+                            <span><strong>Formal validation finds gaps:</strong> STRIDE analysis revealed vulnerabilities initial architecture missed. Fixed all before launch.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="font-bold flex-shrink-0">→</span>
-                            <span><strong>Zero-trust architecture:</strong> No API keys in frontend, authentication at every layer, Cloudflare Workers proxy</span>
+                            <span><strong>Ongoing security operations:</strong> Logging/monitoring, regular threat assessment, vulnerability scanning, incident response playbook</span>
                         </li>
                     </ul>
                 </div>
@@ -408,6 +407,10 @@
                     <div class="text-3xl mb-4">⚠️</div>
                     <h3 class="text-xl font-bold text-red-900 mb-4">When I Had to Step In</h3>
                     <ul class="space-y-3 text-red-800">
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold flex-shrink-0">→</span>
+                            <span><strong>Validation found vulnerabilities:</strong> Security-informed architecture wasn't enough. Formal STRIDE analysis revealed gaps I'd missed—fixed all before launch.</span>
+                        </li>
                         <li class="flex items-start gap-2">
                             <span class="font-bold flex-shrink-0">→</span>
                             <span><strong>iOS App Store rejections:</strong> 4 rejections. AI couldn't debug Apple's feedback. I researched docs, fixed IAP issues.</span>
@@ -420,10 +423,6 @@
                             <span class="font-bold flex-shrink-0">→</span>
                             <span><strong>Architecture decisions:</strong> AI can't choose between approaches. I decided: zero-trust, serverless, multi-platform strategy.</span>
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="font-bold flex-shrink-0">→</span>
-                            <span><strong>Security code review:</strong> AI generates code, but I review for vulnerabilities. Found 5 issues in initial implementation.</span>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -431,8 +430,9 @@
             <div class="mt-8 max-w-3xl mx-auto bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
                 <div class="font-bold text-blue-900 mb-2">Bottom Line:</div>
                 <div class="text-blue-800">
-                    AI is a force multiplier for implementation. But human expertise in <strong>architecture</strong>, <strong>security design</strong>,
-                    <strong>debugging</strong>, and <strong>quality control</strong> is non-negotiable. That's the skillset I bring.
+                    AI accelerates implementation. Human expertise ensures security: <strong>architecture</strong> (design with security in mind),
+                    <strong>validation</strong> (formal analysis finds gaps), <strong>remediation</strong> (fix everything before launch),
+                    <strong>operations</strong> (ongoing security program). This is production security discipline.
                 </div>
             </div>
         </div>
