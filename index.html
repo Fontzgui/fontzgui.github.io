@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>AI-First Development Leadership | AI Security Engineer Portfolio</title>
+    <meta name="description" content="Architecting secure AI systems at scale. Built DreamVelo in 6 months with AI assistance: 28 STRIDE threats mitigated, zero security incidents, 10k+ lines generated. Proven framework for AI-first development.">
+    <meta name="keywords" content="AI security engineer, AI product manager, AI-assisted development, prompt engineering, STRIDE threat modeling, secure AI, zero-trust architecture">
+
+    <!-- Open Graph (LinkedIn, Facebook) -->
+    <meta property="og:title" content="AI-First Development Leadership | Proven Framework">
+    <meta property="og:description" content="Architecting secure AI systems: 28 threats mitigated, zero incidents, AI-assisted development framework proven in production.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fontzgui.github.io">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#8B5CF6',
+                        accent: '#10B981'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom gradient */
+        .gradient-bg {
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">Portfolio</a>
+                <div class="hidden md:flex gap-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary">Home</a>
+                    <a href="project.html" class="text-gray-700 hover:text-primary">DreamVelo Project</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="project.html" class="block py-2 text-gray-700 hover:text-primary">DreamVelo Project</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Architecting AI-First Development at Scale
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    I prove AI-assisted development works in production. Leading secure system design, directing AI implementation, and validating every output. Built DreamVelo to demonstrate the framework: <strong>Human expertise + AI acceleration = Production quality.</strong>
+                </p>
+                <div class="bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-lg p-6 mb-8 text-left max-w-2xl mx-auto">
+                    <div class="font-bold text-lg mb-3">Target Roles:</div>
+                    <div class="grid md:grid-cols-3 gap-3 text-sm">
+                        <div>✓ AI Security Engineer</div>
+                        <div>✓ AI Product Manager</div>
+                        <div>✓ Technical Customer Success</div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="project.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                        View DreamVelo Case Study
+                    </a>
+                    <a href="https://github.com/fontzgui" target="_blank" class="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
+                        View GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics: Provable Security & Process -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">Proven Results: DreamVelo Platform</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- Metric 1 -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl font-bold text-accent mb-2">Zero</div>
+                    <div class="text-gray-600 font-medium">Security Incidents</div>
+                    <div class="text-sm text-gray-500 mt-2">In production since launch</div>
+                </div>
+                <!-- Metric 2 -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl font-bold text-primary mb-2">28</div>
+                    <div class="text-gray-600 font-medium">STRIDE Threats</div>
+                    <div class="text-sm text-gray-500 mt-2">Identified & mitigated</div>
+                </div>
+                <!-- Metric 3 -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl font-bold text-secondary mb-2">10,000+</div>
+                    <div class="text-gray-600 font-medium">Lines Generated</div>
+                    <div class="text-sm text-gray-500 mt-2">Via AI-assisted development</div>
+                </div>
+                <!-- Metric 4 -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl font-bold text-primary mb-2">6 Months</div>
+                    <div class="text-gray-600 font-medium">Solo Development</div>
+                    <div class="text-sm text-gray-500 mt-2">Concept → Production</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Thesis -->
+    <section class="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">The Thesis I Proved</h2>
+                <div class="bg-white rounded-xl shadow-lg p-8 md:p-12">
+                    <div class="text-xl text-gray-700 leading-relaxed space-y-6">
+                        <p>
+                            <strong class="text-primary">AI-first development can be as secure as traditional development</strong> — if you architect it correctly.
+                        </p>
+                        <p>
+                            I built DreamVelo not just as a product, but as <strong>proof the approach works</strong>. As an AI Security Engineer / AI Product Manager, I demonstrate how to:
+                        </p>
+                        <ul class="space-y-3 ml-6">
+                            <li class="flex items-start gap-3">
+                                <span class="text-accent text-xl flex-shrink-0">✓</span>
+                                <span><strong>Design</strong> secure AI systems (threat modeling before any code)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-accent text-xl flex-shrink-0">✓</span>
+                                <span><strong>Direct</strong> AI implementation (prompt engineering at scale, 10k+ lines)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-accent text-xl flex-shrink-0">✓</span>
+                                <span><strong>Validate</strong> AI output (adversarial testing, security code review)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-accent text-xl flex-shrink-0">✓</span>
+                                <span><strong>Deploy</strong> to production (multi-platform, real users, zero incidents)</span>
+                            </li>
+                        </ul>
+                        <p class="pt-4 border-t-2 border-gray-200">
+                            <strong>DreamVelo isn't just my portfolio project — it's proof that human expertise guiding AI implementation delivers production-quality results.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project: The Proof -->
+    <section id="dreamvelo" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">DreamVelo: The Demonstration</h2>
+                <p class="text-center text-gray-600 mb-12">Production AI platform built with security-first architecture</p>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-gray-200">
+                    <!-- Project Image Placeholder -->
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-64 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="text-6xl mb-4">🚀</div>
+                            <div class="text-2xl font-bold">DreamVelo</div>
+                            <div class="text-blue-100">AI-Powered Job Search Platform</div>
+                        </div>
+                    </div>
+
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4">What I Built & Why It Matters</h3>
+                        <p class="text-gray-700 mb-6">
+                            <strong>Purpose:</strong> AI-powered job search platform that saves users 50-80 hours per search through intelligent compatibility scoring.
+                            <strong>But more importantly:</strong> A production-scale demonstration of secure AI-first development.
+                        </p>
+
+                        <!-- What This Demonstrates -->
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+                            <div class="font-bold text-blue-900 mb-3">What This Demonstrates for Employers:</div>
+                            <ul class="space-y-2 text-blue-800 text-sm">
+                                <li>• <strong>I can architect secure AI systems</strong> from scratch (zero-trust, defense in depth)</li>
+                                <li>• <strong>I can direct AI implementation</strong> at scale (10,000+ lines, multi-platform)</li>
+                                <li>• <strong>I can validate security</strong> rigorously (28 threats mitigated, adversarial testing)</li>
+                                <li>• <strong>I can ship to production</strong> and maintain it (live users, zero incidents)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Security Implementation -->
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="flex items-start gap-3">
+                                <div class="text-accent text-xl">🔒</div>
+                                <div>
+                                    <div class="font-semibold">28 STRIDE Threats Mitigated</div>
+                                    <div class="text-sm text-gray-600">Threat modeling, security code review, Firestore rules analysis</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="text-accent text-xl">🛡️</div>
+                                <div>
+                                    <div class="font-semibold">15 Prompt Injection Patterns</div>
+                                    <div class="text-sm text-gray-600">Blocked before reaching AI (with code examples)</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="text-accent text-xl">🤖</div>
+                                <div>
+                                    <div class="font-semibold">5-Step Development Framework</div>
+                                    <div class="text-sm text-gray-600">Research → Specify → Prompt → Validate → Deploy</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="text-accent text-xl">☁️</div>
+                                <div>
+                                    <div class="font-semibold">Multi-Platform Deployment</div>
+                                    <div class="text-sm text-gray-600">Web (live), iOS (submitted), Android (complete)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTAs -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://dreamvelo.com" target="_blank" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition text-center">
+                                Live Demo →
+                            </a>
+                            <a href="project.html" class="border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition text-center">
+                                View Full Case Study →
+                            </a>
+                            <a href="https://github.com/fontzgui/fontzgui.github.io" target="_blank" class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-center">
+                                See Code Samples →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5-Step Framework -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">My AI-Assisted Development Framework</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                How I generated 10,000+ lines of production code while maintaining security and quality
+            </p>
+
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- Step 1 -->
+                <div class="bg-white border-l-4 border-primary p-6 rounded-lg shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                        <div>
+                            <div class="font-bold text-xl mb-2">Research & Threat Modeling</div>
+                            <div class="text-gray-700">
+                                Understand problem domain, identify security threats (STRIDE analysis), define attack surface.
+                                <strong>Before writing any code.</strong>
+                            </div>
+                            <div class="text-sm text-gray-600 mt-2">
+                                → Result: 28 threats identified for DreamVelo (prompt injection, API exposure, XSS, payment fraud, auth bypass)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white border-l-4 border-secondary p-6 rounded-lg shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                        <div>
+                            <div class="font-bold text-xl mb-2">Specify Security Requirements</div>
+                            <div class="text-gray-700">
+                                Write exact requirements: features, security controls, test cases, error handling, edge cases.
+                                <strong>AI needs detailed specifications.</strong>
+                            </div>
+                            <div class="text-sm text-gray-600 mt-2">
+                                → Example: "Block 15 prompt injection patterns, log blocked attempts, show user-friendly error"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white border-l-4 border-accent p-6 rounded-lg shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                        <div>
+                            <div class="font-bold text-xl mb-2">Prompt Engineering (AI Implementation)</div>
+                            <div class="text-gray-700">
+                                Detailed prompts with line numbers, examples, validation criteria. AI generates code.
+                                <strong>~70% success rate first try.</strong>
+                            </div>
+                            <div class="text-sm text-gray-600 mt-2">
+                                → Speed advantage: 4x faster than manual coding (2-4 hours vs 8-16 hours per feature)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white border-l-4 border-primary p-6 rounded-lg shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+                        <div>
+                            <div class="font-bold text-xl mb-2">Validate with Adversarial Testing</div>
+                            <div class="text-gray-700">
+                                Test with malicious inputs, edge cases, production scenarios. Review generated code for security issues.
+                                <strong>Human validation is critical.</strong>
+                            </div>
+                            <div class="text-sm text-gray-600 mt-2">
+                                → Created 20+ malicious test cases, performed security code review (5 findings documented)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-white border-l-4 border-secondary p-6 rounded-lg shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+                        <div>
+                            <div class="font-bold text-xl mb-2">Deploy & Monitor</div>
+                            <div class="text-gray-700">
+                                AWS deployment, CloudWatch monitoring, rollback procedures. Track security events.
+                                <strong>Production is the real test.</strong>
+                            </div>
+                            <div class="text-sm text-gray-600 mt-2">
+                                → Result: Zero security incidents, &lt;2 min rollback capability, comprehensive logging
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <div class="bg-purple-50 border-2 border-purple-500 rounded-lg p-6 max-w-3xl mx-auto">
+                    <div class="font-bold text-purple-900 text-lg mb-2">The Key Insight</div>
+                    <div class="text-purple-800">
+                        <strong>AI accelerates implementation.</strong> Humans ensure correctness through architecture, security design, and validation.
+                        This is the future of technical work.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Playbook: What Works, What Doesn't -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">The Playbook: Lessons Learned</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                What I learned building DreamVelo with AI assistance - the successes and the failures
+            </p>
+
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                <!-- What Works -->
+                <div class="bg-green-50 border-2 border-green-500 rounded-lg p-8">
+                    <div class="text-3xl mb-4">✅</div>
+                    <h3 class="text-xl font-bold text-green-900 mb-4">What Works</h3>
+                    <ul class="space-y-3 text-green-800">
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold flex-shrink-0">→</span>
+                            <span><strong>Security-first design:</strong> Threat modeling before coding prevents incidents (28 threats mitigated, zero attacks)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold flex-shrink-0">→</span>
+                            <span><strong>Detailed specifications:</strong> AI needs exact requirements. "Add security" fails. "Block 15 patterns, log events, return false" works.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold flex-shrink-0">→</span>
+                            <span><strong>Iterative validation:</strong> Test immediately, fix fast. ~2.5 iterations average per feature.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold flex-shrink-0">→</span>
+                            <span><strong>Zero-trust architecture:</strong> No API keys in frontend, authentication at every layer, Cloudflare Workers proxy</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- What Doesn't / When Human Steps In -->
+                <div class="bg-red-50 border-2 border-red-500 rounded-lg p-8">
+                    <div class="text-3xl mb-4">⚠️</div>
+                    <h3 class="text-xl font-bold text-red-900 mb-4">When I Had to Step In</h3>
+                    <ul class="space-y-3 text-red-800">
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold flex-shrink-0">→</span>
+                            <span><strong>iOS App Store rejections:</strong> 4 rejections. AI couldn't debug Apple's feedback. I researched docs, fixed IAP issues.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold flex-shrink-0">→</span>
+                            <span><strong>Registration bugs:</strong> Email verification modal issues (Nov 5-12). Required manual debugging, Firestore rules analysis.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold flex-shrink-0">→</span>
+                            <span><strong>Architecture decisions:</strong> AI can't choose between approaches. I decided: zero-trust, serverless, multi-platform strategy.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold flex-shrink-0">→</span>
+                            <span><strong>Security code review:</strong> AI generates code, but I review for vulnerabilities. Found 5 issues in initial implementation.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 max-w-3xl mx-auto bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                <div class="font-bold text-blue-900 mb-2">Bottom Line:</div>
+                <div class="text-blue-800">
+                    AI is a force multiplier for implementation. But human expertise in <strong>architecture</strong>, <strong>security design</strong>,
+                    <strong>debugging</strong>, and <strong>quality control</strong> is non-negotiable. That's the skillset I bring.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">What I Bring to Your Team</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Proven capabilities in AI security, development leadership, and customer value delivery
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Column 1: AI Security Leadership -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-primary">
+                    <div class="text-3xl mb-4">🔒</div>
+                    <h3 class="text-xl font-bold mb-4">AI Security Leadership</h3>
+
+                    <div class="space-y-4 text-gray-700">
+                        <div>
+                            <div class="font-semibold text-gray-900">Threat Modeling</div>
+                            <div class="text-sm">STRIDE analysis before coding. 28 threats identified for DreamVelo, all mitigated with documented controls.</div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-gray-900">Security Implementation</div>
+                            <div class="text-sm">15+ prompt injection patterns blocked, zero-trust architecture, Firestore security rules enforcement, MFA implementation.</div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-gray-900">Validation & Testing</div>
+                            <div class="text-sm">Created 20+ adversarial test cases, security code review (5 findings), production monitoring with security event logging.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: AI-Assisted Development -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-secondary">
+                    <div class="text-3xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-4">AI Development Leadership</h3>
+
+                    <div class="space-y-4 text-gray-700">
+                        <div>
+                            <div class="font-semibold text-gray-900">Framework Creation</div>
+                            <div class="text-sm">5-step process for AI-assisted development. Applied to generate 10,000+ lines across web + mobile platforms.</div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-gray-900">Prompt Engineering</div>
+                            <div class="text-sm">Detailed specifications with requirements, test cases, validation criteria. ~70% success rate first try, 2.5 avg iterations.</div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-gray-900">Quality Control</div>
+                            <div class="text-sm">Human validation of all AI output. Testing, debugging, code review. Know when AI succeeds vs when to step in.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Product & Value -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-accent">
+                    <div class="text-3xl mb-4">💡</div>
+                    <h3 class="text-xl font-bold mb-4">Product & Business Impact</h3>
+
+                    <div class="space-y-4 text-gray-700">
+                        <div>
+                            <div class="font-semibold text-gray-900">Architecture Decisions</div>
+                            <div class="text-sm">Designed zero-trust multi-tier system, serverless infrastructure, multi-platform deployment strategy. AI can't make these calls.</div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-gray-900">Customer Value</div>
+                            <div class="text-sm">Quantified ROI calculations (time saved, faster placement), feature prioritization based on outcomes, cost optimization (&lt;$100/month).</div>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-gray-900">Rapid Delivery</div>
+                            <div class="text-sm">6 months concept → production. Multi-platform (web live, iOS submitted, Android complete). Rollback &lt;2 min.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I'm Looking For -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Open to Opportunities</h2>
+                <p class="text-xl text-gray-700 mb-8">
+                    Seeking roles where I can apply these lessons at scale. I've proven the framework works - ready to help your team adopt AI-first development securely.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-blue-50 p-6 rounded-lg text-left">
+                        <div class="font-bold text-lg mb-2 text-primary">AI Security Engineer</div>
+                        <div class="text-sm text-gray-700">Design security controls for AI products. I've proven the approach at small scale - ready to apply at enterprise scale.</div>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg text-left">
+                        <div class="font-bold text-lg mb-2 text-secondary">AI Product Manager</div>
+                        <div class="text-sm text-gray-700">Help teams adopt AI tools effectively. I've lived it - I can guide others through the framework.</div>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg text-left">
+                        <div class="font-bold text-lg mb-2 text-accent">Technical Customer Success</div>
+                        <div class="text-sm text-gray-700">Bridge technical implementation ↔ business value. I quantify ROI and explain AI security to stakeholders.</div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg text-left">
+                    <div class="font-bold text-lg mb-4">Ideal Environment:</div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Building customer-facing AI products (not internal tools)</li>
+                        <li>• Security-first culture</li>
+                        <li>• Fast-paced, high-impact teams</li>
+                        <li>• Leading AI companies or AI-first startups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's Discuss AI-First Development</h2>
+                <p class="text-xl mb-8 text-blue-100">
+                    Want to see DreamVelo's architecture? Discuss the framework? Talk about how your team can adopt AI securely?
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="project.html" class="bg-white text-primary px-6 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                        View Full Case Study
+                    </a>
+                    <a href="contact.html" class="border-2 border-white px-6 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
+                        Schedule a Conversation
+                    </a>
+                    <a href="https://www.linkedin.com/in/fontzguillaume/" target="_blank" class="border-2 border-white px-6 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
+                        Connect on LinkedIn
+                    </a>
+                    <a href="https://github.com/fontzgui" target="_blank" class="border-2 border-white px-6 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
+                        View Code Samples on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Left -->
+                <div>
+                    <div class="text-white font-bold text-lg mb-2">Portfolio</div>
+                    <div class="text-sm">© 2025. Built with AI-first development principles.</div>
+                </div>
+
+                <!-- Middle -->
+                <div>
+                    <div class="text-white font-bold mb-2">Navigation</div>
+                    <div class="space-y-2 text-sm">
+                        <div><a href="index.html" class="hover:text-white">Home</a></div>
+                        <div><a href="project.html" class="hover:text-white">DreamVelo Project</a></div>
+                        <div><a href="about.html" class="hover:text-white">About</a></div>
+                        <div><a href="contact.html" class="hover:text-white">Contact</a></div>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div>
+                    <div class="text-white font-bold mb-2">Connect</div>
+                    <div class="space-y-2 text-sm">
+                        <div><a href="https://www.linkedin.com/in/fontzguillaume/" target="_blank" class="hover:text-white">LinkedIn</a></div>
+                        <div><a href="https://github.com/fontzgui" target="_blank" class="hover:text-white">GitHub</a></div>
+                        <div><a href="mailto:guillfontz@gmail.com" class="hover:text-white">Email</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

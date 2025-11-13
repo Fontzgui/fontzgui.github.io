@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DreamVelo Project - AI-Powered Job Search Platform</title>
+    <meta name="description" content="Complete case study of DreamVelo: Production AI platform built with security-first architecture. Zero incidents, $5k-$18k ROI per user.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#8B5CF6',
+                        accent: '#10B981'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation (same as homepage) -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">Portfolio</a>
+                <div class="hidden md:flex gap-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary">Home</a>
+                    <a href="project.html" class="text-primary font-semibold">DreamVelo Project</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="project.html" class="block py-2 text-primary font-semibold">DreamVelo Project</a>
+                <a href="about.html" class="block py-2 text-gray-700">About</a>
+                <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="gradient-bg text-white pt-32 pb-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Breadcrumb -->
+                <div class="text-blue-100 mb-4">
+                    <a href="index.html" class="hover:text-white">Home</a> >
+                    <a href="index.html#dreamvelo" class="hover:text-white">Projects</a> >
+                    <span>DreamVelo</span>
+                </div>
+
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    DreamVelo: AI-Powered Job Search Platform
+                </h1>
+                <p class="text-xl text-blue-100 mb-6">
+                    Production AI with Security-First Architecture | 6 Months | Solo Development
+                </p>
+
+                <!-- Meta Info -->
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div>
+                        <div class="text-blue-200">Role</div>
+                        <div class="font-semibold">Sole Architect, Engineer, Product Owner</div>
+                    </div>
+                    <div>
+                        <div class="text-blue-200">Timeline</div>
+                        <div class="font-semibold">May 2025 - November 2025 (6 months)</div>
+                    </div>
+                    <div>
+                        <div class="text-blue-200">Status</div>
+                        <div class="font-semibold">Production (Web), App Store Review (iOS)</div>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <a href="https://dreamvelo.com" target="_blank" class="inline-block bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                        Live Demo: dreamvelo.com →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="max-w-4xl mx-auto space-y-16">
+
+            <!-- The Problem -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6">The Problem I Solved</h2>
+                <div class="prose max-w-none">
+                    <p class="text-lg text-gray-700 mb-4">
+                        Job seekers waste <strong>61-86 hours</strong> per search, applying to 50+ jobs they'll never get.
+                    </p>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-6">
+                        <div class="font-bold text-red-900 mb-2">Why? Traditional tools (LinkedIn, Indeed) use basic keyword matching.</div>
+                        <div class="text-red-800">They can't answer: <em>"Am I actually qualified for this job?"</em></div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 my-8">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="font-bold text-gray-900 mb-4">Time Breakdown</div>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• 8-12 hours: Manual job screening</li>
+                                <li>• 25-37 hours: Resume tailoring</li>
+                                <li>• 16-25 hours: Cover letter writing</li>
+                                <li>• 12+ hours: Company research</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="font-bold text-gray-900 mb-4">The Result</div>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• <strong>5-10% interview rate</strong> (spray and pray)</li>
+                                <li>• 25-37 hours wasted on resume tailoring</li>
+                                <li>• Auto-rejected within hours</li>
+                                <li>• Frustration and burnout</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Solution -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6">AI-Powered Compatibility Scoring</h2>
+
+                <!-- How It Works -->
+                <div class="bg-white border-2 border-primary rounded-lg p-8 mb-8">
+                    <h3 class="text-xl font-bold mb-6">How It Works</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">1</div>
+                            <div>
+                                <div class="font-bold text-gray-900">Upload Resume</div>
+                                <div class="text-gray-600">Users upload PDF, DOCX, or paste text. AI extracts skills, experience level, education, career trajectory in &lt;3 seconds.</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">2</div>
+                            <div>
+                                <div class="font-bold text-gray-900">Search Jobs</div>
+                                <div class="text-gray-600">Users search "software engineer" or "remote data scientist." We fetch real job listings from APIs.</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">3</div>
+                            <div>
+                                <div class="font-bold text-gray-900">AI Scoring (0-100%)</div>
+                                <div class="text-gray-600 mb-3">Each job gets a compatibility score using my 5-factor weighted algorithm:</div>
+                                <div class="bg-gray-50 p-4 rounded font-mono text-sm">
+                                    <div class="mb-1">Skills Match          40%  ████████</div>
+                                    <div class="mb-1">Experience Level      25%  █████</div>
+                                    <div class="mb-1">Job Title Relevance   20%  ████</div>
+                                    <div class="mb-1">Location Fit          10%  ██</div>
+                                    <div>Industry Match         5%  █</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold">4</div>
+                            <div>
+                                <div class="font-bold text-gray-900">Focus on 75%+ Matches</div>
+                                <div class="text-gray-600">Instead of 50 applications, users apply to 15-20 highly compatible jobs.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outcome -->
+                <div class="bg-accent text-white p-8 rounded-lg">
+                    <div class="text-xl font-bold mb-4">The Outcome</div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-3xl font-bold mb-2">50-80 hours</div>
+                            <div class="text-green-100">saved per job search</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-2">40-60%</div>
+                            <div class="text-green-100">interview rate (vs 5-10%)</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-2">2-4 weeks</div>
+                            <div class="text-green-100">faster placement</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Customer Value -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6">Quantified ROI</h2>
+
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="font-bold text-lg mb-2">Time Saved</div>
+                            <div class="text-sm text-gray-600 mb-2">Traditional: 61-86 hours</div>
+                            <div class="text-sm text-gray-600 mb-2">With DreamVelo: 14-23 hours</div>
+                            <div class="text-2xl font-bold text-primary">50-80 hours saved</div>
+                        </div>
+
+                        <div>
+                            <div class="font-bold text-lg mb-2">Money Value</div>
+                            <div class="text-sm text-gray-600 mb-2">At $30/hour: $1,500-$2,400</div>
+                            <div class="text-sm text-gray-600 mb-2">At $50/hour: $2,500-$4,000</div>
+                            <div class="text-2xl font-bold text-primary">$1,500-$4,000</div>
+                        </div>
+
+                        <div>
+                            <div class="font-bold text-lg mb-2">Faster Placement</div>
+                            <div class="text-sm text-gray-600 mb-2">2-4 weeks earlier employment</div>
+                            <div class="text-sm text-gray-600 mb-2">At $100k salary: $3,800-$7,700</div>
+                            <div class="text-2xl font-bold text-primary">$4,000-$15,000</div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t-2 border-gray-300 text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">$5,000 - $18,000</div>
+                        <div class="text-gray-700">Total ROI per user for $30/month subscription</div>
+                        <div class="text-2xl font-bold text-accent mt-2">ROI: 5,500-20,000%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Architecture -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6">Security-First Technical Architecture</h2>
+
+                <div class="bg-gray-900 text-gray-300 p-8 rounded-lg mb-6 font-mono text-sm overflow-x-auto">
+                    <pre>
+┌─────────────────────────────────────────────┐
+│ USER BROWSER (Alpine.js SPA)               │
+│ - Firebase JWT only (no API keys)          │
+│ - Client-side validation (UX)              │
+│ - HTML escaping before render               │
+└──────────────┬──────────────────────────────┘
+               │ HTTPS + JWT
+               ▼
+┌─────────────────────────────────────────────┐
+│ CLOUDFLARE WORKERS (Edge Security)         │
+│ - Verify Firebase JWT                       │
+│ - Rate limiting (10 req/month free)         │
+│ - Add API key server-side                   │
+└──────────────┬──────────────────────────────┘
+               │ HTTPS + API Key
+               ▼
+┌─────────────────────────────────────────────┐
+│ AWS LAMBDA (Backend Processing)            │
+│ - Retrieve keys from Secrets Manager        │
+│ - Validate IAP receipts (iOS, Android)      │
+│ - Email forwarding (support)                │
+└──────────────┬──────────────────────────────┘
+               │ API Calls
+               ▼
+┌─────────────────────────────────────────────┐
+│ EXTERNAL APIs                                │
+│ - Google Gemini Pro 1.5 (AI)                │
+│ - JSearch API (job listings)                │
+│ - Stripe (web payments)                      │
+└─────────────────────────────────────────────┘
+                    </pre>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white border-2 border-gray-200 p-6 rounded-lg">
+                        <div class="font-bold text-lg mb-3">Design Principles</div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><strong>Zero Trust:</strong> No secrets in frontend, auth at every layer</li>
+                            <li><strong>Defense in Depth:</strong> Multiple security layers</li>
+                            <li><strong>Fail Securely:</strong> Block suspicious activity, log events</li>
+                            <li><strong>Cost Optimized:</strong> Serverless = pay per request</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border-2 border-gray-200 p-6 rounded-lg">
+                        <div class="font-bold text-lg mb-3">Key Technologies</div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><strong>Frontend:</strong> Alpine.js SPA on AWS S3 + CloudFront</li>
+                            <li><strong>Security:</strong> Cloudflare Workers proxy, Firebase JWT</li>
+                            <li><strong>Backend:</strong> AWS Lambda, Secrets Manager</li>
+                            <li><strong>AI:</strong> Google Gemini Pro 1.5 (&lt;$0.01 per analysis)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Security Implementation -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6">Security Controls (Zero Incidents)</h2>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-white border-2 border-gray-200 rounded-lg">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="px-6 py-3 text-left font-bold">Threat</th>
+                                <th class="px-6 py-3 text-left font-bold">Impact</th>
+                                <th class="px-6 py-3 text-left font-bold">Mitigation</th>
+                                <th class="px-6 py-3 text-left font-bold">Result</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">Prompt Injection</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-red-100 text-red-800 rounded text-sm">High</span></td>
+                                <td class="px-6 py-4">15+ pattern blockers</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">0 attacks</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">API Key Exposure</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-red-100 text-red-800 rounded text-sm">Critical</span></td>
+                                <td class="px-6 py-4">Cloudflare proxy + Secrets Manager</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">$0 unauthorized</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">XSS</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-orange-100 text-orange-800 rounded text-sm">High</span></td>
+                                <td class="px-6 py-4">HTML escaping + CSP headers</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Tests passed</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">Payment Fraud</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-sm">Medium</span></td>
+                                <td class="px-6 py-4">Server-side receipt validation</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">0 fraud</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">Auth Bypass</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-red-100 text-red-800 rounded text-sm">High</span></td>
+                                <td class="px-6 py-4">Firebase + TOTP MFA</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">0 breaches</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6">
+                    <div class="font-bold text-blue-900 mb-2">Live Demo Available</div>
+                    <div class="text-blue-800">I can demonstrate live - attempt malicious input "Ignore previous instructions..." and show it get blocked before reaching AI.</div>
+                    <div class="mt-4">
+                        <a href="contact.html" class="text-blue-600 font-semibold hover:text-blue-800">Schedule Demo →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI-Assisted Development -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6">How I Built This So Fast</h2>
+
+                <p class="text-lg text-gray-700 mb-6">
+                    I didn't write 10,000+ lines from scratch. I used <strong>prompt engineering</strong> to generate production code.
+                </p>
+
+                <div class="bg-white border-2 border-primary rounded-lg p-8 mb-6">
+                    <h3 class="text-xl font-bold mb-6">5-Step Framework</h3>
+
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">1</div>
+                            <div>
+                                <div class="font-bold">Research</div>
+                                <div class="text-gray-600">Understand problem domain (threat modeling, APIs, customer needs)</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">2</div>
+                            <div>
+                                <div class="font-bold">Specify</div>
+                                <div class="text-gray-600">Write exact requirements (features, security, test cases, error handling)</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">3</div>
+                            <div>
+                                <div class="font-bold">Prompt Engineer</div>
+                                <div class="text-gray-600">Detailed prompts with line numbers, examples, validation criteria</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">4</div>
+                            <div>
+                                <div class="font-bold">Validate</div>
+                                <div class="text-gray-600">Test with adversarial inputs, edge cases, production scenarios</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-accent text-white rounded-full flex items-center justify-center font-bold">5</div>
+                            <div>
+                                <div class="font-bold">Deploy</div>
+                                <div class="text-gray-600">AWS deployment, CloudWatch monitoring, rollback if issues</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metrics -->
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg text-center">
+                        <div class="text-3xl font-bold text-primary mb-2">10,000+</div>
+                        <div class="text-sm text-gray-600">Lines Generated</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg text-center">
+                        <div class="text-3xl font-bold text-primary mb-2">~70%</div>
+                        <div class="text-sm text-gray-600">Success Rate First Try</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg text-center">
+                        <div class="text-3xl font-bold text-primary mb-2">~2.5</div>
+                        <div class="text-sm text-gray-600">Avg Iterations per Feature</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">4x</div>
+                        <div class="text-sm text-gray-600">Speed Advantage</div>
+                    </div>
+                </div>
+
+                <!-- The Key Insight -->
+                <div class="mt-8 bg-purple-50 border-l-4 border-purple-500 p-6">
+                    <div class="font-bold text-purple-900 text-lg mb-2">The Key Insight</div>
+                    <div class="text-purple-800">
+                        This is the future of software development: <strong>Human expertise</strong> (what to build, how to build it securely) +
+                        <strong>AI implementation</strong> (code generation).
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6">Measurable Outcomes</h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Technical</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent text-xl">✓</span>
+                                <span>Zero security incidents (prompt injection, API abuse, XSS - all blocked)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent text-xl">✓</span>
+                                <span>99.9% uptime (CloudFront + S3)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent text-xl">✓</span>
+                                <span>&lt;2s page load (CDN optimized)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent text-xl">✓</span>
+                                <span>&lt;$100/month cost at scale</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Business</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent text-xl">💰</span>
+                                <span>$300k development value (6 months solo)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent text-xl">💰</span>
+                                <span>$5k-$18k ROI per user</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent text-xl">📈</span>
+                                <span>4x development speed (AI-assisted)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 grid md:grid-cols-3 gap-4">
+                    <div class="bg-white border-2 border-accent p-6 rounded-lg">
+                        <div class="text-sm text-gray-600 mb-1">Web</div>
+                        <div class="font-bold">Live at dreamvelo.com</div>
+                    </div>
+                    <div class="bg-white border-2 border-yellow-400 p-6 rounded-lg">
+                        <div class="text-sm text-gray-600 mb-1">iOS</div>
+                        <div class="font-bold">Build 26 submitted (Oct 27)</div>
+                    </div>
+                    <div class="bg-white border-2 border-gray-300 p-6 rounded-lg">
+                        <div class="text-sm text-gray-600 mb-1">Android</div>
+                        <div class="font-bold">Code complete</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Materials -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6">Explore Further</h2>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="https://github.com/fontzgui/fontzgui.github.io" target="_blank" class="bg-white border-2 border-gray-200 p-6 rounded-lg hover:border-primary transition">
+                        <div class="text-3xl mb-3">💻</div>
+                        <div class="font-bold text-lg mb-2">Code Samples</div>
+                        <div class="text-gray-600 text-sm">Security implementation with exact line numbers, test cases</div>
+                    </a>
+
+                    <a href="https://dreamvelo.com" target="_blank" class="bg-white border-2 border-gray-200 p-6 rounded-lg hover:border-primary transition">
+                        <div class="text-3xl mb-3">🎯</div>
+                        <div class="font-bold text-lg mb-2">Live Demo</div>
+                        <div class="text-gray-600 text-sm">Try DreamVelo yourself or schedule a walkthrough</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="gradient-bg text-white p-12 rounded-lg text-center">
+                <h2 class="text-3xl font-bold mb-4">Let's Discuss This Project</h2>
+                <p class="text-xl text-blue-100 mb-8">
+                    Interested in DreamVelo's architecture, security controls, or AI-assisted development process?
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                        Contact Me
+                    </a>
+                    <a href="index.html" class="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
+                        Back to Home
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Footer (same as homepage) -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div>
+                    <div class="text-white font-bold text-lg mb-2">Portfolio</div>
+                    <div class="text-sm">© 2025. Built with security-first principles.</div>
+                </div>
+                <div>
+                    <div class="text-white font-bold mb-2">Navigation</div>
+                    <div class="space-y-2 text-sm">
+                        <div><a href="index.html" class="hover:text-white">Home</a></div>
+                        <div><a href="project.html" class="hover:text-white">DreamVelo Project</a></div>
+                        <div><a href="about.html" class="hover:text-white">About</a></div>
+                        <div><a href="contact.html" class="hover:text-white">Contact</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-white font-bold mb-2">Connect</div>
+                    <div class="space-y-2 text-sm">
+                        <div><a href="https://www.linkedin.com/in/fontzguillaume/" target="_blank" class="hover:text-white">LinkedIn</a></div>
+                        <div><a href="https://github.com/fontzgui" target="_blank" class="hover:text-white">GitHub</a></div>
+                        <div><a href="mailto:guillfontz@gmail.com" class="hover:text-white">Email</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
