@@ -158,4 +158,4 @@ Production code samples from DreamVelo demonstrating:
 
 ---
 
-**© 2025 Guillaume Fontz. Built with AI-first development principles.**
+**© 2025-2026 Guillaume Fontz. Built with AI-first development principles.**
