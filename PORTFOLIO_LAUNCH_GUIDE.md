@@ -455,7 +455,7 @@ I'd love to discuss how I can help [Company] build secure AI products at scale.
 Portfolio: https://fontzgui.github.io
 
 Best regards,
-Guillaume Fontz
+Fontz Guillaume
 ```
 
 **Customization per application:**

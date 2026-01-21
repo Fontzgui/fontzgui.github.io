@@ -1,4 +1,4 @@
-# Guillaume Fontz - AI Security & Product Portfolio
+# Fontz Guillaume - AI Security & Product Portfolio
 
 **Live Portfolio**: [fontzgui.github.io](https://fontzgui.github.io)
 
@@ -158,4 +158,4 @@ Production code samples from DreamVelo demonstrating:
 
 ---
 
-**© 2025-2026 Guillaume Fontz. Built with AI-first development principles.**
+**© 2025-2026 Fontz Guillaume. Built with AI-first development principles.**

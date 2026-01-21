@@ -432,7 +432,7 @@ Open to AI Security Engineer, AI Product Manager, or Technical Customer Success 
 
 **Test your searchability:**
 1. Log out of LinkedIn
-2. Search Google: `site:linkedin.com "AI Security Engineer" "Guillaume Fontz"`
+2. Search Google: `site:linkedin.com "AI Security Engineer" "Fontz Guillaume"`
 3. Your profile should appear in results
 
 ---
